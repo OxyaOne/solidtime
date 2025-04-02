@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e02eaa279f99a886be314748daa0b234",
+    "content-hash": "4375a615ca27733ce7737b495f37a573",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -3440,6 +3440,78 @@
                 }
             ],
             "time": "2025-02-03T10:55:03+00:00"
+        },
+        {
+            "name": "hafael/azure-mailer-driver",
+            "version": "v7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hafael/azure-mailer-driver.git",
+                "reference": "52719b902b70d0b710943a4ed353bf21a9fa9f63"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hafael/azure-mailer-driver/zipball/52719b902b70d0b710943a4ed353bf21a9fa9f63",
+                "reference": "52719b902b70d0b710943a4ed353bf21a9fa9f63",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/azure-mailer": "^7.2",
+                "symfony/mailer": "^7.2"
+            },
+            "require-dev": {
+                "symfony/http-client": "^6.4|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Hafael\\Mailer\\Azure\\AzureMailerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hafael\\Mailer\\Azure\\": [
+                        "src",
+                        "test"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rafael Villa Verde",
+                    "email": "villa655321verde@gmail.com"
+                }
+            ],
+            "description": "Provides Microsoft Azure ACS integration for Symfony Mailer. Azure Communication Services allows you to easily add real-time multimedia voice, video, and telephony-over-IP communications features to your applications. The Communication Services Email client libraries also allow you to add chat and EMAIL functionality to your communications solutions.",
+            "homepage": "https://github.com/hafael/azure-mailer-driver",
+            "keywords": [
+                "ECS",
+                "api",
+                "azure",
+                "azure communication service",
+                "client",
+                "driver",
+                "email",
+                "laravel",
+                "mailer",
+                "microsoft",
+                "php",
+                "sdk",
+                "swift",
+                "symfony"
+            ],
+            "support": {
+                "issues": "https://github.com/hafael/azure-mailer-driver/issues",
+                "source": "https://github.com/hafael/azure-mailer-driver/tree/v7.2.0"
+            },
+            "time": "2024-11-30T20:21:39+00:00"
         },
         {
             "name": "inertiajs/inertia-laravel",
@@ -9440,6 +9512,71 @@
                 "source": "https://github.com/stechstudio/filament-impersonate/tree/3.15"
             },
             "time": "2024-12-03T17:20:46+00:00"
+        },
+        {
+            "name": "symfony/azure-mailer",
+            "version": "v7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/azure-mailer.git",
+                "reference": "73c4775a7ffc716d3daa6f3961f2dc494ddcf09e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/azure-mailer/zipball/73c4775a7ffc716d3daa6f3961f2dc494ddcf09e",
+                "reference": "73c4775a7ffc716d3daa6f3961f2dc494ddcf09e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/mailer": "^7.2"
+            },
+            "require-dev": {
+                "symfony/http-client": "^6.4|^7.0"
+            },
+            "type": "symfony-mailer-bridge",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Mailer\\Bridge\\Azure\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rafael Villa Verde",
+                    "homepage": "https://github.com/hafael"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Microsoft Azure Mailer Bridge",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/azure-mailer/tree/v7.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-28T08:24:38+00:00"
         },
         {
             "name": "symfony/clock",
@@ -15834,7 +15971,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "8.3.*",
+        "php": "8.4.*",
         "ext-zip": "*"
     },
     "platform-dev": {},
